@@ -7,16 +7,21 @@
 </head>
 <body>
 
+	<p></p>
+
 	<script type="text/javascript">		
 
-	$.ajax("inf.txt").done(function(data){
+	$.ajax("info.txt")
+	.done(function(data){
 		
-		alert(data);
+		$("p").html(data);
 
-	}).fail(function(){
+	})
+
+	.fail(function(){
 		alert("Could not get data!");
-	}
-	);
+	
+	});
 
 	</script>
 </body>
